@@ -2,17 +2,17 @@
 
 
 #ssh -q -L 8082:localhost:8082
-#jq install
-sudo apt install -y jq
-
-#maybe install java on here?
 
 #git clone https://github.com/DWONeill18/devOps_jenkinsSetup.git
 #cd devOps_jenkinsSetup
 #./install.sh
 #./update.sh
+sudo apt update
 sudo apt install wget
 sudo apt install -y wget vim openjdk-8-jdk openjdk-8-jre
+
+#jq install
+sudo apt install jq
 sudo apt-get install maven
 mvn -version
 sudo apt install curl
